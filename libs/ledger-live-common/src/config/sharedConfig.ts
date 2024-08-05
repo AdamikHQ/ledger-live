@@ -22,6 +22,7 @@ import { tronConfig } from "../families/tron/config";
 import { vechainConfig } from "../families/vechain/config";
 import { iconConfig } from "../families/icon/config";
 import { appConfig } from "../apps/config";
+import { adamikConfig } from "../families/adamik/config";
 
 const countervaluesConfig: ConfigSchema = {
   config_countervalues_refreshRate: {
@@ -63,4 +64,5 @@ export const liveConfig: ConfigSchema = {
   ...tronConfig,
   ...vechainConfig,
   ...iconConfig,
+  ...adamikConfig,
 };

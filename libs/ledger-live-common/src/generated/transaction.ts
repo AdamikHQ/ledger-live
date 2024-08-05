@@ -1,3 +1,4 @@
+import adamik from "../families/adamik/transaction";
 import casper from "../families/casper/transaction";
 import celo from "../families/celo/transaction";
 import cosmos from "../families/cosmos/transaction";
@@ -22,6 +23,7 @@ import xrp from "@ledgerhq/coin-xrp/transaction";
 import icon from "@ledgerhq/coin-icon/transaction";
 
 export default {
+  adamik,
   casper,
   celo,
   cosmos,

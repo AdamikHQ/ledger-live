@@ -162,7 +162,10 @@ export type CryptoCurrencyId =
   | "blast"
   | "blast_sepolia"
   | "scroll"
-  | "scroll_sepolia";
+  | "scroll_sepolia"
+  | "zksync"
+  | "zksync_sepolia"
+  | "celestia";
 
 export type LedgerExplorerId =
   | "btc"

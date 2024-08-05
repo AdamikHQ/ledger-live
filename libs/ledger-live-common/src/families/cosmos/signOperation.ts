@@ -56,6 +56,7 @@ export const signOperation: AccountBridge<Transaction>["signOperation"] = ({
             accountNumber.toString(),
             sequence.toString(),
           );
+          console.log({ signDoc: JSON.stringify(signDoc) });
           const tx = Buffer.from(serializeSignDoc(signDoc));
           const app = new CosmosApp(transport);
           const path = account.freshAddressPath.split("/").map(p => parseInt(p.replace("'", "")));
@@ -76,9 +77,13 @@ export const signOperation: AccountBridge<Transaction>["signOperation"] = ({
               throw new UserRefusedOnDevice();
           }
 
+          console.log({ signResponseApp: signResponseApp.signature.toString("hex") });
+
           const signature = Buffer.from(
             Secp256k1Signature.fromDer(signResponseApp.signature).toFixedLength(),
           );
+
+          console.log({ signature: signature.toString("hex") });
 
           const txBytes = buildTransaction({
             protoMsgs,
@@ -92,6 +97,8 @@ export const signOperation: AccountBridge<Transaction>["signOperation"] = ({
           });
 
           const signed = Buffer.from(txBytes).toString("hex");
+
+          console.log({ signed: signed });
 
           if (cancelled) {
             return;

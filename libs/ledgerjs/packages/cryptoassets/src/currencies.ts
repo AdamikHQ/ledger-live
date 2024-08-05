@@ -184,7 +184,7 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
     ticker: "ALGO",
     scheme: "algorand",
     color: "#000000",
-    family: "algorand",
+    family: "adamik",
     units: [
       {
         name: "ALGO",
@@ -2685,7 +2685,7 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
     ticker: "OSMO",
     scheme: "osmo",
     color: "#493c9b",
-    family: "cosmos",
+    family: "adamik",
     units: [
       {
         name: "Osmosis",
@@ -3988,7 +3988,7 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
     ticker: "ETH",
     scheme: "base",
     color: "#1755FE",
-    family: "evm",
+    family: "adamik",
     units: ethereumUnits("ETH", "ETH"),
     ethereumLikeInfo: {
       chainId: 8453,
@@ -4011,7 +4011,7 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
     deviceTicker: "ETH",
     scheme: "base_sepolia",
     color: "#FF0000",
-    family: "evm",
+    family: "adamik",
     units: ethereumUnits("ETH", "ETH").map(makeTestnetUnit),
     disableCountervalue: true,
     isTestnetFor: "base",
@@ -4233,6 +4233,87 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
         token: "https://sepolia.scrollscan.dev/token/$address",
       },
     ],
+  },
+  zksync: {
+    type: "CryptoCurrency",
+    id: "zksync",
+    coinType: CoinType.ETH,
+    name: "zkSync",
+    managerAppName: "Ethereum",
+    ticker: "ETH",
+    scheme: "zksync",
+    color: "#ff0000",
+    family: "adamik",
+    units: ethereumUnits("ETH", "ETH").map(makeTestnetUnit),
+    disableCountervalue: false,
+    isTestnetFor: "scroll",
+    ethereumLikeInfo: {
+      chainId: 324,
+    },
+    explorerViews: [
+      {
+        tx: "https://explorer.zksync.io/tx/$hash",
+        address: "https://explorer.zksync.io/address/$address",
+        token: "https://explorer.zksync.io/address/$address",
+      },
+    ],
+  },
+  zksync_sepolia: {
+    type: "CryptoCurrency",
+    id: "zksync_sepolia",
+    coinType: CoinType.ETH,
+    name: "Base Sepolia",
+    managerAppName: "Ethereum",
+    ticker: "ETH",
+    deviceTicker: "ETH",
+    scheme: "zksync_sepolia",
+    color: "#FF0000",
+    family: "adamik",
+    units: ethereumUnits("ETH", "ETH").map(makeTestnetUnit),
+    disableCountervalue: true,
+    isTestnetFor: "zksync",
+    ethereumLikeInfo: {
+      chainId: 300,
+    },
+    explorerViews: [
+      {
+        tx: "https://sepolia.explorer.zksync.io/tx/$hash",
+        address: "https://sepolia.explorer.zksync.io/address/$address",
+        token: "https://sepolia.explorer.zksync.io/address/$address",
+      },
+    ],
+  },
+  celestia: {
+    type: "CryptoCurrency",
+    id: "celestia",
+    coinType: CoinType.ATOM,
+    name: "Celestia",
+    managerAppName: "Cosmos",
+    ticker: "TIA",
+    scheme: "cosmos",
+    color: "#16192f",
+    family: "adamik",
+    // FIXME: enable it back when confirmation number is fixed
+    // blockAvgTime: 8,
+    units: [
+      {
+        name: "Tia",
+        code: "TIA",
+        magnitude: 6,
+      },
+      {
+        name: "microTia",
+        code: "utia",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://www.mintscan.io/celestia/txs/$hash",
+        address: "https://www.mintscan.io/celestia/validators/$address",
+      },
+    ],
+    keywords: ["atom", "celestia"],
   },
   // Keep it at the bottom
   // Tickers dup

@@ -51,7 +51,7 @@
     "nightly": "pnpm turbo nightly --no-daemon",
     "nightly:lld": "pnpm turbo nightly --no-daemon --filter=ledger-live-desktop",
     "test": "pnpm turbo test --no-daemon --concurrency=50%",
-    "run:cli": "./apps/cli/bin/index.js",
+    "run:cli": "node ./apps/cli/bin/index.js",
     "lint": "pnpm turbo lint --no-daemon",
     "lint:fix": "pnpm turbo lint:fix --no-daemon",
     "typecheck": "pnpm turbo typecheck --no-daemon",

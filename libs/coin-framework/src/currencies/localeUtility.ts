@@ -1,5 +1,5 @@
 import memoize from "lodash/memoize";
-const options = {
+const options: any = {
   style: "currency",
   currency: "USD",
 };

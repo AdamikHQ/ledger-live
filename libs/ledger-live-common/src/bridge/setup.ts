@@ -7,8 +7,9 @@ import { PassthroughFn, SignerContext } from "@ledgerhq/coin-framework/signer";
 import { MessageSignerFn, SignMessage } from "../hw/signMessage/types";
 import { GetAddressOptions, Resolver } from "../hw/getAddress/types";
 import { withDevice } from "../hw/deviceAccess";
+import { CryptoCurrencyId } from "@ledgerhq/types-cryptoassets";
 
-export type CreateSigner<T> = (transport: Transport) => T;
+export type CreateSigner<T> = (transport: Transport, currencyId: CryptoCurrencyId) => T;
 export type CoinResolver<T> = (signerContext: SignerContext<T>) => GetAddressFn;
 export type MessageSigner<T> = (signerContext: SignerContext<T>) => MessageSignerFn;
 
@@ -19,7 +20,7 @@ export type MessageSigner<T> = (signerContext: SignerContext<T>) => MessageSigne
  */
 export function executeWithSigner<T>(signerFactory: CreateSigner<T>): SignerContext<T> {
   return <U>(deviceId: string, fn: PassthroughFn<T, U>): Promise<U> =>
-    firstValueFrom(withDevice(deviceId)(transport => from(fn(signerFactory(transport)))));
+    firstValueFrom(withDevice(deviceId)(transport => from(fn(signerFactory(transport, "cosmos")))));
 }
 
 /**
@@ -33,7 +34,8 @@ export function createResolver<T>(
   coinResolver: CoinResolver<T>,
 ): Resolver {
   return (transport: Transport, opts: GetAddressOptions): ReturnType<GetAddressFn> => {
-    const signerContext: SignerContext<T> = (_, fn) => fn(signerFactory(transport));
+    const signerContext: SignerContext<T> = (_, fn) =>
+      fn(signerFactory(transport, opts.currency.id as CryptoCurrencyId));
     return coinResolver(signerContext)("", opts);
   };
 }
@@ -46,7 +48,8 @@ export function createMessageSigner<T>(
   messageSigner: MessageSigner<T>,
 ): SignMessage {
   return (transport, account, messageData) => {
-    const signerContext: SignerContext<T> = (_, fn) => fn(signerFactory(transport));
+    const signerContext: SignerContext<T> = (_, fn) =>
+      fn(signerFactory(transport, account.currency.id as CryptoCurrencyId));
     return messageSigner(signerContext)("", account, messageData);
   };
 }

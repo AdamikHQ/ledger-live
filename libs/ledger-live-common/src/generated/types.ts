@@ -1,4 +1,10 @@
 import type {
+  Transaction as adamikTransaction,
+  TransactionRaw as adamikTransactionRaw,
+  TransactionStatus as adamikTransactionStatus,
+  TransactionStatusRaw as adamikTransactionStatusRaw,
+} from "../families/adamik/types";
+import type {
   Transaction as algorandTransaction,
   TransactionRaw as algorandTransactionRaw,
   TransactionStatus as algorandTransactionStatus,
@@ -132,6 +138,7 @@ import type {
 } from "@ledgerhq/coin-xrp/types/index";
 
 export type Transaction =
+  | adamikTransaction
   | algorandTransaction
   | bitcoinTransaction
   | cardanoTransaction
@@ -156,6 +163,7 @@ export type Transaction =
   | xrpTransaction;
 
 export type TransactionRaw =
+  | adamikTransactionRaw
   | algorandTransactionRaw
   | bitcoinTransactionRaw
   | cardanoTransactionRaw
@@ -180,6 +188,7 @@ export type TransactionRaw =
   | xrpTransactionRaw;
 
 export type TransactionStatus =
+  | adamikTransactionStatus
   | algorandTransactionStatus
   | bitcoinTransactionStatus
   | cardanoTransactionStatus
@@ -204,6 +213,7 @@ export type TransactionStatus =
   | xrpTransactionStatus;
 
 export type TransactionStatusRaw =
+  | adamikTransactionStatusRaw
   | algorandTransactionStatusRaw
   | bitcoinTransactionStatusRaw
   | cardanoTransactionStatusRaw

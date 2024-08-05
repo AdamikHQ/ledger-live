@@ -125,7 +125,7 @@ export default {
                   str += render(
                     "Account " + getDefaultAccountName(top) + " > " + getDefaultAccountName(sub),
                     [sub],
-                  ).replace(/\n/s, "  \n");
+                  ).replace(/\n/, "  \n");
                   str += "\n";
                 });
               }

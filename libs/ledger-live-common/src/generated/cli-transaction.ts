@@ -1,3 +1,4 @@
+import adamik from "../families/adamik/cli-transaction";
 import celo from "../families/celo/cli-transaction";
 import cosmos from "../families/cosmos/cli-transaction";
 import crypto_org from "../families/crypto_org/cli-transaction";
@@ -20,6 +21,7 @@ import { cliTools as xrp } from "../families/xrp/setup";
 import { cliTools as icon } from "../families/icon/setup";
 
 export default {
+  adamik,
   celo,
   cosmos,
   crypto_org,

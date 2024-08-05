@@ -1,3 +1,4 @@
+import adamik from "../families/adamik/hw-getAddress";
 import casper from "../families/casper/hw-getAddress";
 import celo from "../families/celo/hw-getAddress";
 import cosmos from "../families/cosmos/hw-getAddress";
@@ -22,6 +23,7 @@ import { resolver as xrp } from "../families/xrp/setup";
 import { resolver as icon } from "../families/icon/setup";
 
 export default {
+  adamik,
   casper,
   celo,
   cosmos,

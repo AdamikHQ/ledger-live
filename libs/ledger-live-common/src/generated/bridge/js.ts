@@ -1,3 +1,4 @@
+import adamik from "../../families/adamik/bridge/js";
 import casper from "../../families/casper/bridge/js";
 import celo from "../../families/celo/bridge/js";
 import cosmos from "../../families/cosmos/bridge/js";
@@ -22,6 +23,7 @@ import { bridge as xrp } from "../../families/xrp/setup";
 import { bridge as icon } from "../../families/icon/setup";
 
 export default {
+  adamik,
   casper,
   celo,
   cosmos,
