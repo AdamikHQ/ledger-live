@@ -24,6 +24,7 @@ export const getEstimatedFees = async ({
   const tx = {
     ...transaction,
   };
+  console.log({ account });
   try {
     const result = await transactionEncode({
       ...tx,

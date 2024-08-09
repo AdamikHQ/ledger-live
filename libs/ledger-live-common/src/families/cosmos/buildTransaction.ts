@@ -273,6 +273,7 @@ export const buildTransaction = ({
   sequence: string | number;
   signature: Uint8Array;
 }): Uint8Array => {
+  console.log({ pubKey });
   const signedTx = TxRaw.encode({
     bodyBytes: TxBody.encode(
       TxBody.fromPartial({

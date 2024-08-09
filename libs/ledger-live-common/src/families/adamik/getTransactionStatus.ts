@@ -36,11 +36,13 @@ export const getTransactionStatus: AccountBridge<
     senders: [account.freshAddress],
     recipients: [transaction.recipient],
     useMaxAmount: transaction.useAllAmount || false,
+    params: {
+      pubKey: account.xpub,
+    },
   });
 
   const status = result?.transaction.status;
 
-  console.log({ status: JSON.stringify(status) });
   status?.errors.forEach(error => {
     switch (error.message) {
       case "Balance is too low":

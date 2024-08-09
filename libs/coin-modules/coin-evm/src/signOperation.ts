@@ -50,6 +50,8 @@ export const buildSignOperation =
         });
         const serializedTxHexString = getSerializedTransaction(preparedTransaction).slice(2); // Remove 0x prefix
 
+        console.log("serializedTxHexString", serializedTxHexString);
+
         // Configure type of resolutions necessary for the clear signing
         const resolutionConfig: ResolutionConfig = {
           externalPlugins: true,

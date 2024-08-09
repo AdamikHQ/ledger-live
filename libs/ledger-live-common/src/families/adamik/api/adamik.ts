@@ -4,9 +4,8 @@ import {
   AdamikTransaction,
   AdamikTransactionEncodeResponse,
 } from "./adamik.types";
-import axios from "axios";
 
-const ADAMIK_API_URL = `https://api.adamik.io/api`;
+const ADAMIK_API_URL = `http://localhost:3000/api`;
 const ADAMIK_API_KEY = "afd0b43d3c2297ff5771fa6c4d6a0bf2d12405b310ff295d2ac5ad54ff509852";
 
 export const getAccount = async (chainId: string, address: string): Promise<AdamikAccountState> => {
@@ -27,6 +26,7 @@ export const getAccount = async (chainId: string, address: string): Promise<Adam
 export const transactionEncode = async (
   plainTransaction: AdamikTransaction,
 ): Promise<AdamikTransactionEncodeResponse | null> => {
+  console.log("IN", { plainTransaction });
   const response = await fetch(`${ADAMIK_API_URL}/transaction/encode`, {
     headers: {
       Authorization: ADAMIK_API_KEY,
@@ -37,6 +37,7 @@ export const transactionEncode = async (
   });
 
   const data = await response.json();
+  console.log("OUT", { plainTransaction: data.transaction.plain });
   return data;
 };
 
@@ -57,23 +58,21 @@ export const broadcastTransaction = async ({
   encodedTransaction,
 }: BroadcastArgs): Promise<BroadcastResponse> => {
   console.log({ transaction, signature, encodedTransaction });
-  const response = await network<BroadcastResponse>({
-    url: `${ADAMIK_API_URL}/transaction/broadcast`,
+  const response = await fetch(`${ADAMIK_API_URL}/transaction/broadcast`, {
     headers: {
       Authorization: ADAMIK_API_KEY,
       "Content-Type": "application/json",
     },
     method: "POST",
-    data: {
+    body: JSON.stringify({
       transaction: {
         plain: transaction,
         encoded: encodedTransaction,
         signature,
       },
-    },
+    }),
   });
 
-  console.log({ response });
-
-  return response.data;
+  const data = await response.json();
+  return data;
 };

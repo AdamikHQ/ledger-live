@@ -2415,6 +2415,20 @@
     "value": "Value",
     "header": "Account allocation ({{count}})"
   },
+  "adamik": {
+    "account": {
+      "subHeader": {
+        "cardTitle": "Powered by Adamik",
+        "moreInfo": "More info",
+        "drawerTitle": "Adamik integration",
+        "title": "Adamik power multiple blockchains in Ledger Live",
+        "description": "You can now safely secure your eGold (EGLD) tokens and manage them through Ledger Live.",
+        "description2": "The MultiversX eGold (EGLD) Token is native to the MultiversX Network and will be used for everything from transactions, staking, smart contracts, governance and validator rewards.",
+        "description3": "We are actively working with the MultiversX team to add more functionality, such as staking, native ESDT (Elrond Standard Digital Token) support, and more.",
+        "website": "The Internet Scale Blockchain"
+      }
+    }
+  },
   "elrond": {
     "guardedAccountWarning": "If you have a guardian set on your account, you won't be able to successfully send transactions via Ledger Live.",
     "summary": {

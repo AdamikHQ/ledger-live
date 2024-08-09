@@ -92,4 +92,7 @@ setSupportedCurrencies([
   "blast_sepolia",
   "scroll",
   "scroll_sepolia",
+  "zksync",
+  "zksync_sepolia",
+  "celestia",
 ]);

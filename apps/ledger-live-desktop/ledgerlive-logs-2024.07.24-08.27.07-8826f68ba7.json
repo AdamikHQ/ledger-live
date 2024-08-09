@@ -1,0 +1,1392 @@
+[
+  {
+    "resourceUsage": {
+      "images": {
+        "count": 1,
+        "size": 90872,
+        "liveSize": 80560
+      },
+      "scripts": {
+        "count": 0,
+        "size": 0,
+        "liveSize": 0
+      },
+      "cssStyleSheets": {
+        "count": 1,
+        "size": 65104,
+        "liveSize": 30344
+      },
+      "xslStyleSheets": {
+        "count": 0,
+        "size": 0,
+        "liveSize": 0
+      },
+      "fonts": {
+        "count": 10,
+        "size": 518182,
+        "liveSize": 0
+      },
+      "other": {
+        "count": 0,
+        "size": 0,
+        "liveSize": 0
+      }
+    },
+    "release": "2.84.0",
+    "git_commit": "8826f68ba7",
+    "environment": "development",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.243 Electron/30.3.0 Safari/537.36",
+    "userAnonymousId": "de93a3cd-2e92-4f61-8e24-c4b08808a0b7",
+    "env": {
+      "ADDRESS_POISONING_FAMILIES": "evm,tron",
+      "ANALYTICS_CONSOLE": false,
+      "DEBUG_THEME": false,
+      "API_ICP_ENDPOINT": "https://icp.coin.ledger.com/",
+      "API_CASPER_INDEXER_ENDPOINT": "https://casper.coin.ledger.com/indexer",
+      "API_CASPER_NODE_ENDPOINT": "https://casper.coin.ledger.com/node/",
+      "API_ALGORAND_BLOCKCHAIN_EXPLORER_API_ENDPOINT": "https://algorand.coin.ledger.com",
+      "API_CELO_INDEXER": "https://celo.coin.ledger.com/indexer/",
+      "API_CELO_NODE": "https://celo.coin.ledger.com/archive/",
+      "COSMOS_GAS_AMPLIFIER": 1.3,
+      "API_FILECOIN_ENDPOINT": "https://filecoin.coin.ledger.com",
+      "API_STACKS_ENDPOINT": "https://stacks.coin.ledger.com",
+      "API_POLKADOT_INDEXER": "https://polkadot.coin.ledger.com",
+      "API_POLKADOT_SIDECAR": "https://polkadot-sidecar.coin.ledger.com",
+      "API_POLKADOT_SIDECAR_CREDENTIALS": "",
+      "API_POLKADOT_NODE": "https://polkadot-fullnodes.api.live.ledger.com",
+      "ELROND_API_ENDPOINT": "https://elrond.coin.ledger.com",
+      "ELROND_DELEGATION_API_ENDPOINT": "https://delegations-elrond.coin.ledger.com",
+      "API_STELLAR_HORIZON": "https://stellar.coin.ledger.com",
+      "API_STELLAR_HORIZON_FETCH_LIMIT": 100,
+      "API_STELLAR_HORIZON_STATIC_FEE": false,
+      "API_TEZOS_BAKER": "https://tezos-bakers.api.live.ledger.com",
+      "API_TEZOS_BLOCKCHAIN_EXPLORER_API_ENDPOINT": "https://xtz-explorer.api.live.ledger.com/explorer",
+      "API_TEZOS_TZKT_API": "https://xtz-tzkt-explorer.api.live.ledger.com",
+      "API_TEZOS_NODE": "https://xtz-node.api.live.ledger.com",
+      "API_TRONGRID_PROXY": "https://tron.coin.ledger.com",
+      "API_SOLANA_PROXY": "https://solana.coin.ledger.com",
+      "SOLANA_VALIDATORS_APP_BASE_URL": "https://earn.api.live.ledger.com/v0/network/solana/validator-details",
+      "SOLANA_TESTNET_VALIDATORS_APP_BASE_URL": "https://validators-solana.coin.ledger.com/api/v1/validators",
+      "SOLANA_TX_CONFIRMATION_TIMEOUT": 100000,
+      "API_HEDERA_MIRROR": "https://hedera.coin.ledger.com",
+      "API_VECHAIN_THOREST": "https://vechain.coin.ledger.com",
+      "BASE_SOCKET_URL": "wss://scriptrunner.api.live.ledger.com/update",
+      "BOT_TIMEOUT_SCAN_ACCOUNTS": 600000,
+      "BOT_SPEC_DEFAULT_TIMEOUT": 1800000,
+      "BUY_API_BASE": "https://buy.api.live.ledger.com/buy/v1",
+      "CARDANO_API_ENDPOINT": "https://cardano.coin.ledger.com/api",
+      "CARDANO_TESTNET_API_ENDPOINT": "https://testnet-ledger.cardanoscan.io/api",
+      "ICON_NODE_ENDPOINT": "https://icon.coin.ledger.com/api/v3",
+      "ICON_DEBUG_ENDPOINT": "https://icon.coin.ledger.com/api/v3d",
+      "ICON_INDEXER_ENDPOINT": "https://icon.coin.ledger.com/api/v1",
+      "ICON_TESTNET_NODE_ENDPOINT": "https://berlin.net.solidwallet.io/api/v3",
+      "ICON_TESTNET_DEBUG_ENDPOINT": "https://berlin.net.solidwallet.io/api/v3d",
+      "ICON_TESTNET_INDEXER_ENDPOINT": "https://tracker.berlin.icon.community/api/v1",
+      "COINAPPS": "",
+      "CRYPTO_ORG_INDEXER": "https://cryptoorg-rpc-indexer.coin.ledger.com",
+      "CRYPTO_ORG_TESTNET_INDEXER": "https://cronos-pos.org/explorer/croeseid4",
+      "CRYPTO_ORG_RPC_URL": "https://cryptoorg-rpc-node.coin.ledger.com",
+      "CRYPTO_ORG_TESTNET_RPC_URL": "https://rpc-testnet-croeseid-4.crypto.org",
+      "DEBUG_UTXO_DISPLAY": 4,
+      "DEBUG_HTTP_RESPONSE": false,
+      "DEVICE_CANCEL_APDU_FLUSH_MECHANISM": true,
+      "DEVICE_PROXY_URL": "",
+      "DEVICE_PROXY_MODEL": "nanoS",
+      "DISABLE_TRANSACTION_BROADCAST": false,
+      "DISABLE_SYNC_TOKEN": true,
+      "DISABLE_FW_UPDATE_VERSION_CHECK": false,
+      "EIP1559_MINIMUM_FEES_GATE": true,
+      "EIP1559_PRIORITY_FEE_LOWER_GATE": 0.85,
+      "EIP1559_BASE_FEE_MULTIPLIER": 1.5,
+      "EXPERIMENTAL_BLE": false,
+      "EXPERIMENTAL_CURRENCIES": "",
+      "EXPERIMENTAL_EXPLORERS": false,
+      "EXPERIMENTAL_LANGUAGES": false,
+      "EXPERIMENTAL_MANAGER": false,
+      "EXPERIMENTAL_ROI_CALCULATION": false,
+      "EXPERIMENTAL_SEND_MAX": false,
+      "EXPERIMENTAL_USB": false,
+      "EXPERIMENTAL_SWAP": false,
+      "EXPLORER": "https://explorers.api.live.ledger.com",
+      "EXPLORER_STAGING": "https://explorers.api-01.live.ledger-stg.com",
+      "EXPLORER_BETA": "https://explorers.api.live.ledger.com",
+      "EXPLORER_SATSTACK": "http://localhost:20000",
+      "EXPORT_EXCLUDED_LOG_TYPES": "ble-frame",
+      "EXPORT_MAX_LOGS": 5000,
+      "DISABLE_APP_VERSION_REQUIREMENTS": false,
+      "FORCE_PROVIDER": 1,
+      "FILTER_ZERO_AMOUNT_ERC20_EVENTS": true,
+      "GET_CALLS_RETRY": 2,
+      "GET_CALLS_TIMEOUT": 60000,
+      "HIDE_EMPTY_TOKEN_ACCOUNTS": false,
+      "KEYCHAIN_OBSERVABLE_RANGE": 0,
+      "LEDGER_CLIENT_VERSION": "",
+      "LEDGER_COUNTERVALUES_API": "https://countervalues.live.ledger.com",
+      "LEDGER_REST_API_BASE": "https://explorers.api.live.ledger.com",
+      "LEGACY_KT_SUPPORT_TO_YOUR_OWN_RISK": false,
+      "MANAGER_API_BASE": "https://manager.api.live.ledger.com/api",
+      "MANAGER_DEV_MODE": false,
+      "MANAGER_INSTALL_DELAY": 1000,
+      "MAPPING_SERVICE": "https://mapping-service.api.ledger.com",
+      "MAX_ACCOUNT_NAME_SIZE": 50,
+      "MOCK": "",
+      "MOCK_COUNTERVALUES": "",
+      "MOCK_EXCHANGE_TEST_CONFIG": false,
+      "MOCK_REMOTE_LIVE_MANIFEST": "",
+      "MOCK_OS_VERSION": "",
+      "MOCK_NO_BYPASS": false,
+      "NFT_CURRENCIES": "ethereum,polygon",
+      "NFT_ETH_METADATA_SERVICE": "https://nft.api.live.ledger.com",
+      "OPERATION_ADDRESSES_LIMIT": 100,
+      "OPERATION_OPTIMISTIC_RETENTION": 1800000,
+      "OPERATION_PAGE_SIZE_INITIAL": 100,
+      "POLKADOT_ELECTION_STATUS_THRESHOLD": 25,
+      "SATSTACK": false,
+      "SCAN_FOR_INVALID_PATHS": false,
+      "SEED": "",
+      "SHOW_LEGACY_NEW_ACCOUNT": false,
+      "SIMPLE_HASH_API_BASE": "https://simplehash.api.live.ledger.com/api/v0",
+      "SKIP_ONBOARDING": false,
+      "SPECULOS_API_PORT": 0,
+      "SPECULOS_PID_OFFSET": 0,
+      "SPECULOS_USE_WEBSOCKET": false,
+      "SWAP_API_BASE": "https://swap.ledger.com/v5",
+      "SWAP_USER_IP": "",
+      "SYNC_ALL_INTERVAL": 480000,
+      "SYNC_BOOT_DELAY": 2000,
+      "SYNC_PENDING_INTERVAL": 10000,
+      "SYNC_OUTDATED_CONSIDERED_DELAY": 600000,
+      "SYNC_MAX_CONCURRENT": 4,
+      "BOT_MAX_CONCURRENT": 10,
+      "USER_ID": "d6cabe64-825a-4185-b5d5-cd103b76b0b1",
+      "WALLETCONNECT": false,
+      "CLOUD_SYNC_API": "https://cloud-sync-backend.api.aws.stg.ldg-tech.com",
+      "WITH_DEVICE_POLLING_DELAY": 500,
+      "ANNOUNCEMENTS_API_URL": "https://cdn.live.ledger.com/announcements",
+      "ANNOUNCEMENTS_API_VERSION": 1,
+      "STATUS_API_URL": "https://ledger.statuspage.io/api",
+      "STATUS_API_VERSION": 2,
+      "TEZOS_MAX_TX_QUERIES": 100,
+      "TRUSTCHAIN_API": "https://trustchain-backend.api.aws.stg.ldg-tech.com",
+      "PLATFORM_DEBUG": false,
+      "PLATFORM_EXPERIMENTAL_APPS": false,
+      "PLATFORM_MANIFEST_API_URL": "https://live-app-catalog.ledger.com/api/v1/apps",
+      "PLATFORM_LOCAL_MANIFEST_JSON": "",
+      "PLATFORM_GLOBAL_CATALOG_API_URL": "https://cdn.live.ledger.com/platform/catalog/v1/data.json",
+      "PLATFORM_GLOBAL_CATALOG_STAGING_API_URL": "https://cdn.live.ledger-stg.com/platform/catalog/v1/data.json",
+      "PLATFORM_RAMP_CATALOG_API_URL": "https://cdn.live.ledger.com/platform/trade/v1/data.json",
+      "PLATFORM_RAMP_CATALOG_STAGING_API_URL": "https://cdn.live.ledger-stg.com/platform/trade/v1/data.json",
+      "PLATFORM_API_URL": "",
+      "PLATFORM_API_VERSION": 1,
+      "PLAYWRIGHT_RUN": false,
+      "MARKET_API_URL": "https://proxycg.api.live.ledger.com/api/v3",
+      "USE_LEARN_STAGING_URL": false,
+      "DYNAMIC_CAL_BASE_URL": "https://cdn.live.ledger.com/cryptoassets",
+      "FEATURE_FLAGS": "{}",
+      "PERFORMANCE_CONSOLE": false,
+      "ETHEREUM_STUCK_TRANSACTION_TIMEOUT": 300000,
+      "EVM_REPLACE_TX_LEGACY_GASPRICE_FACTOR": 1.3,
+      "EVM_REPLACE_TX_EIP1559_MAXFEE_FACTOR": 1.3,
+      "EVM_REPLACE_TX_EIP1559_MAXPRIORITYFEE_FACTOR": 1.1,
+      "ENABLE_NETWORK_LOGS": false,
+      "CRYPTO_ASSET_SEARCH_KEYS": [
+        "ticker",
+        "name",
+        "keywords"
+      ],
+      "VERBOSE": [],
+      "DEFAULT_TRANSACTION_POLLING_INTERVAL": 30000,
+      "LOW_BATTERY_PERCENTAGE": 20,
+      "LOG_DRAWERS": false
+    },
+    "accountsIds": [],
+    "level": "info",
+    "message": "exportLogsMeta",
+    "timestamp": "2024-07-24T08:27:07.666Z"
+  },
+  {
+    "type": "analytics",
+    "data": {
+      "page": "AddAccounts Step2",
+      "devModeEnabled": false,
+      "optInAnalytics": true,
+      "optInPersonalRecommendations": true,
+      "hasSeenAnalyticsOptInPrompt": false,
+      "appVersion": "2.84.0",
+      "language": "fr",
+      "appLanguage": "fr",
+      "region": "FR",
+      "environment": "development",
+      "systemLanguage": "fr",
+      "systemRegion": null,
+      "osType": "Windows_NT",
+      "osVersion": "10.0.22631",
+      "sessionId": "1ff7bda0-76fa-4210-ad51-f9c64ae92bea",
+      "sidebarCollapsed": false,
+      "accountsWithFunds": [],
+      "blockchainsWithNftsOwned": [],
+      "hasGenesisPass": false,
+      "hasInfinityPass": false,
+      "hasSeenMarketWidget": false,
+      "modelIdList": [
+        "nanoSP"
+      ],
+      "isBatch1Enabled": true,
+      "isBatch2Enabled": false,
+      "isBatch3Enabled": false,
+      "stakingProvidersEnabled": 5,
+      "ptxSwapMoonpayProviderEnabled": true,
+      "ptxSwapLiveAppDemoZero": false,
+      "ptxSwapLiveAppDemoOne": false,
+      "ptxSwapThorswapProvider": false,
+      "ptxSwapExodusProvider": false,
+      "modelId": "nanoSP",
+      "deviceVersion": "1.1.0",
+      "deviceLanguage": "english",
+      "appLength": 0,
+      "hasWalletSync": false,
+      "walletSyncActivated": false
+    },
+    "level": "info",
+    "message": "△ track ExportLogs",
+    "timestamp": "2024-07-24T08:27:07.661Z"
+  },
+  {
+    "type": "actions-app-event",
+    "message": "error",
+    "data": {
+      "type": "error",
+      "error": {
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      }
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:35.345Z"
+  },
+  {
+    "type": "hw",
+    "message": "Unsubscribing withDevice flow. Ongoing job to unsubscribe from ? true",
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.540Z"
+  },
+  {
+    "type": "hw",
+    "message": "Job error",
+    "data": {
+      "error": {
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      }
+    },
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.540Z"
+  },
+  {
+    "type": "ipc-transport",
+    "message": "Received response from close request message",
+    "data": {
+      "response": {
+        "descriptor": ""
+      }
+    },
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.540Z"
+  },
+  {
+    "type": "ipc-transport",
+    "message": "Sending IPC request",
+    "data": {
+      "data": {
+        "descriptor": ""
+      }
+    },
+    "context": {
+      "requestId": "2ee57a79-4075-4265-bda5-c5a2f368d423",
+      "replyChannel": "transport:close_RESPONSE_2ee57a79-4075-4265-bda5-c5a2f368d423"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.539Z"
+  },
+  {
+    "type": "hw",
+    "message": "Closing transport via the transport implementation",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.539Z"
+  },
+  {
+    "type": "hw",
+    "message": "Trying to close transport",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.539Z"
+  },
+  {
+    "type": "hw",
+    "message": "Closing and cleaning transport",
+    "data": {
+      "function": "finalize"
+    },
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.539Z"
+  },
+  {
+    "type": "hw",
+    "message": "Initial error remapping: Invariant Violation: getAddress is not implemented for algorand",
+    "data": {
+      "error": {
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      },
+      "mappedError": {
+        "name": "Invariant Violation",
+        "framesToPop": 1
+      }
+    },
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.538Z"
+  },
+  {
+    "type": "ipc-transport",
+    "message": "Received response from exchange",
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice",
+      "function": "send"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.537Z"
+  },
+  {
+    "type": "ipc-apdu",
+    "message": "<= 0108416c676f72616e6405322e312e3901029000",
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.537Z"
+  },
+  {
+    "type": "ipc-transport",
+    "message": "Sending IPC request",
+    "data": {
+      "data": {
+        "descriptor": "",
+        "apduHex": "b001000000",
+        "context": {
+          "jobId": 0,
+          "deviceId": "",
+          "origin": "hw:withDevice"
+        }
+      }
+    },
+    "context": {
+      "requestId": "f9a21212-b2e0-43d9-b28d-7fdd07ed1056",
+      "replyChannel": "transport:exchange_RESPONSE_f9a21212-b2e0-43d9-b28d-7fdd07ed1056"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.524Z"
+  },
+  {
+    "type": "ipc-apdu",
+    "message": "=> b001000000",
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.524Z"
+  },
+  {
+    "type": "ipc-transport",
+    "message": "Starting an exchange",
+    "data": {},
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice",
+      "function": "send"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.524Z"
+  },
+  {
+    "type": "hw",
+    "message": "Executing job",
+    "data": {
+      "hasTransport": true
+    },
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.523Z"
+  },
+  {
+    "type": "hw",
+    "message": "Got a Transport instance from open",
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.523Z"
+  },
+  {
+    "type": "ipc-transport",
+    "message": "New instance of IPCTransport for id: ",
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.523Z"
+  },
+  {
+    "type": "actions-app-event",
+    "message": "deviceChange",
+    "data": {
+      "type": "deviceChange",
+      "device": {
+        "deviceId": "",
+        "modelId": "nanoSP",
+        "wired": true
+      }
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.502Z"
+  },
+  {
+    "type": "hw",
+    "message": "Found a matching Transport: ipc",
+    "data": {},
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.502Z"
+  },
+  {
+    "type": "ipc-transport",
+    "message": "Sending IPC request",
+    "data": {
+      "data": {
+        "descriptor": "",
+        "context": {
+          "jobId": 0,
+          "deviceId": "",
+          "origin": "hw:withDevice"
+        }
+      }
+    },
+    "context": {
+      "requestId": "d32db856-c4f8-41b7-b5a0-942480a3a1b7",
+      "replyChannel": "transport:open_RESPONSE_d32db856-c4f8-41b7-b5a0-942480a3a1b7"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.502Z"
+  },
+  {
+    "type": "renderer-setup",
+    "message": "Open called on registered module",
+    "data": {
+      "transport": "IPCTransport"
+    },
+    "context": {
+      "openContext": {
+        "jobId": 0,
+        "deviceId": "",
+        "origin": "hw:withDevice"
+      }
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.501Z"
+  },
+  {
+    "type": "hw",
+    "message": "Previous queued job resolved, now trying to get a Transport instance",
+    "data": {
+      "previousJobId": -1,
+      "currentJobId": 0
+    },
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.501Z"
+  },
+  {
+    "type": "hw",
+    "message": "Waiting for the previous job in the queue to complete",
+    "data": {
+      "previousJobId": -1
+    },
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.501Z"
+  },
+  {
+    "type": "hw",
+    "message": "New job for device: USB",
+    "context": {
+      "jobId": 0,
+      "deviceId": "",
+      "origin": "hw:withDevice"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:34.501Z"
+  },
+  {
+    "type": "analytics",
+    "data": {
+      "source": "AddAccounts Step1",
+      "currencyName": "Algorand",
+      "devModeEnabled": false,
+      "optInAnalytics": true,
+      "optInPersonalRecommendations": true,
+      "hasSeenAnalyticsOptInPrompt": false,
+      "appVersion": "2.84.0",
+      "language": "fr",
+      "appLanguage": "fr",
+      "region": "FR",
+      "environment": "development",
+      "systemLanguage": "fr",
+      "systemRegion": null,
+      "osType": "Windows_NT",
+      "osVersion": "10.0.22631",
+      "sessionId": "1ff7bda0-76fa-4210-ad51-f9c64ae92bea",
+      "sidebarCollapsed": false,
+      "accountsWithFunds": [],
+      "blockchainsWithNftsOwned": [],
+      "hasGenesisPass": false,
+      "hasInfinityPass": false,
+      "hasSeenMarketWidget": false,
+      "modelIdList": [
+        "nanoSP"
+      ],
+      "isBatch1Enabled": true,
+      "isBatch2Enabled": false,
+      "isBatch3Enabled": false,
+      "stakingProvidersEnabled": 5,
+      "ptxSwapMoonpayProviderEnabled": true,
+      "ptxSwapLiveAppDemoZero": false,
+      "ptxSwapLiveAppDemoOne": false,
+      "ptxSwapThorswapProvider": false,
+      "ptxSwapExodusProvider": false,
+      "modelId": "nanoSP",
+      "deviceVersion": "1.1.0",
+      "deviceLanguage": "english",
+      "appLength": 0,
+      "hasWalletSync": false,
+      "walletSyncActivated": false
+    },
+    "level": "info",
+    "message": "△ page AddAccounts Step2",
+    "timestamp": "2024-07-24T08:26:34.490Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  ADD_DEVICE",
+    "timestamp": "2024-07-24T08:26:32.073Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  REMOVE_DEVICE",
+    "timestamp": "2024-07-24T08:26:30.833Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  ADD_DEVICE",
+    "timestamp": "2024-07-24T08:26:30.259Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 updates to apply",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:22.670Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 historical value to fetch (0 pairs)",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:22.669Z"
+  },
+  {
+    "type": "analytics",
+    "data": {
+      "source": "Portfolio",
+      "devModeEnabled": false,
+      "optInAnalytics": true,
+      "optInPersonalRecommendations": true,
+      "hasSeenAnalyticsOptInPrompt": false,
+      "appVersion": "2.84.0",
+      "language": "fr",
+      "appLanguage": "fr",
+      "region": "FR",
+      "environment": "development",
+      "systemLanguage": "fr",
+      "systemRegion": null,
+      "osType": "Windows_NT",
+      "osVersion": "10.0.22631",
+      "sessionId": "1ff7bda0-76fa-4210-ad51-f9c64ae92bea",
+      "sidebarCollapsed": false,
+      "accountsWithFunds": [],
+      "blockchainsWithNftsOwned": [],
+      "hasGenesisPass": false,
+      "hasInfinityPass": false,
+      "hasSeenMarketWidget": false,
+      "modelIdList": [
+        "nanoSP"
+      ],
+      "isBatch1Enabled": true,
+      "isBatch2Enabled": false,
+      "isBatch3Enabled": false,
+      "stakingProvidersEnabled": 5,
+      "ptxSwapMoonpayProviderEnabled": true,
+      "ptxSwapLiveAppDemoZero": false,
+      "ptxSwapLiveAppDemoOne": false,
+      "ptxSwapThorswapProvider": false,
+      "ptxSwapExodusProvider": false,
+      "modelId": "nanoSP",
+      "deviceVersion": "1.1.0",
+      "deviceLanguage": "english",
+      "appLength": 0,
+      "hasWalletSync": false,
+      "walletSyncActivated": false
+    },
+    "level": "info",
+    "message": "△ page AddAccounts Step1",
+    "timestamp": "2024-07-24T08:26:20.700Z"
+  },
+  {
+    "type": "bridge",
+    "message": "action SET_SKIP_UNDER_PRIORITY",
+    "data": {
+      "action": {
+        "type": "SET_SKIP_UNDER_PRIORITY",
+        "priority": 100
+      },
+      "type": "syncQueue"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:26:20.699Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  MODAL_OPEN",
+    "timestamp": "2024-07-24T08:26:20.575Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 updates to apply",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:34.128Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 historical value to fetch (0 pairs)",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:34.127Z"
+  },
+  {
+    "type": "bridge",
+    "message": "schedule ",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:33.127Z"
+  },
+  {
+    "type": "bridge",
+    "message": "action BACKGROUND_TICK",
+    "data": {
+      "action": {
+        "type": "BACKGROUND_TICK",
+        "reason": "initial"
+      },
+      "type": "syncQueue"
+    },
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:33.127Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 updates to apply",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:32.377Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 historical value to fetch (0 pairs)",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:32.376Z"
+  },
+  {
+    "type": "analytics",
+    "data": {
+      "totalAccounts": 0,
+      "totalOperations": 0,
+      "totalCurrencies": 0,
+      "hasExchangeBannerCTA": true,
+      "devModeEnabled": false,
+      "optInAnalytics": true,
+      "optInPersonalRecommendations": true,
+      "hasSeenAnalyticsOptInPrompt": false,
+      "appVersion": "2.84.0",
+      "language": "fr",
+      "appLanguage": "fr",
+      "region": "FR",
+      "environment": "development",
+      "systemLanguage": "fr",
+      "systemRegion": null,
+      "osType": "Windows_NT",
+      "osVersion": "10.0.22631",
+      "sessionId": "1ff7bda0-76fa-4210-ad51-f9c64ae92bea",
+      "sidebarCollapsed": false,
+      "accountsWithFunds": [],
+      "blockchainsWithNftsOwned": [],
+      "hasGenesisPass": false,
+      "hasInfinityPass": false,
+      "hasSeenMarketWidget": false,
+      "modelIdList": [
+        "nanoSP"
+      ],
+      "isBatch1Enabled": true,
+      "isBatch2Enabled": false,
+      "isBatch3Enabled": false,
+      "stakingProvidersEnabled": 5,
+      "ptxSwapMoonpayProviderEnabled": true,
+      "ptxSwapLiveAppDemoZero": false,
+      "ptxSwapLiveAppDemoOne": false,
+      "ptxSwapThorswapProvider": false,
+      "ptxSwapExodusProvider": false,
+      "modelId": "nanoSP",
+      "deviceVersion": "1.1.0",
+      "deviceLanguage": "english",
+      "appLength": 0,
+      "hasWalletSync": false,
+      "walletSyncActivated": false
+    },
+    "level": "info",
+    "message": "△ page Portfolio",
+    "timestamp": "2024-07-24T08:24:31.995Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 updates to apply",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:31.160Z"
+  },
+  {
+    "type": "countervalues",
+    "message": "0 historical value to fetch (0 pairs)",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:31.157Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  REORDER_ACCOUNTS",
+    "timestamp": "2024-07-24T08:24:31.156Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  DB:REORDER_ACCOUNTS",
+    "timestamp": "2024-07-24T08:24:31.156Z"
+  },
+  {
+    "type": "analytics",
+    "data": {
+      "page": null,
+      "devModeEnabled": false,
+      "optInAnalytics": true,
+      "optInPersonalRecommendations": true,
+      "hasSeenAnalyticsOptInPrompt": false,
+      "appVersion": "2.84.0",
+      "language": "fr",
+      "appLanguage": "fr",
+      "region": "FR",
+      "environment": "development",
+      "systemLanguage": "fr",
+      "systemRegion": null,
+      "osType": "Windows_NT",
+      "osVersion": "10.0.22631",
+      "sessionId": "1ff7bda0-76fa-4210-ad51-f9c64ae92bea",
+      "sidebarCollapsed": false,
+      "accountsWithFunds": [],
+      "blockchainsWithNftsOwned": [],
+      "hasGenesisPass": false,
+      "hasInfinityPass": false,
+      "hasSeenMarketWidget": false,
+      "modelIdList": [
+        "nanoSP"
+      ],
+      "modelId": "nanoSP",
+      "deviceVersion": "1.1.0",
+      "deviceLanguage": "english",
+      "appLength": 0
+    },
+    "level": "info",
+    "message": "△ track App Starts",
+    "timestamp": "2024-07-24T08:24:31.084Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  DYNAMIC_CONTENT_SET_NOTIFICATIONS_CARDS",
+    "timestamp": "2024-07-24T08:24:30.582Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  DYNAMIC_CONTENT_SET_ACTION_CARDS",
+    "timestamp": "2024-07-24T08:24:30.582Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  DYNAMIC_CONTENT_SET_PORTFOLIO_CARDS",
+    "timestamp": "2024-07-24T08:24:30.582Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  DYNAMIC_CONTENT_SET_NOTIFICATIONS_CARDS",
+    "timestamp": "2024-07-24T08:24:30.436Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  DYNAMIC_CONTENT_SET_ACTION_CARDS",
+    "timestamp": "2024-07-24T08:24:30.436Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  DYNAMIC_CONTENT_SET_PORTFOLIO_CARDS",
+    "timestamp": "2024-07-24T08:24:30.436Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  CLEAR_DISMISSED_CONTENT_CARDS",
+    "timestamp": "2024-07-24T08:24:29.573Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  INIT_ACCOUNTS",
+    "timestamp": "2024-07-24T08:24:23.208Z"
+  },
+  {
+    "type": "evm/preload",
+    "message": "hydrate 10169 tokens",
+    "level": "debug",
+    "timestamp": "2024-07-24T08:24:22.999Z"
+  },
+  {
+    "type": "analytics",
+    "data": {
+      "devModeEnabled": false,
+      "optInAnalytics": true,
+      "optInPersonalRecommendations": true,
+      "hasSeenAnalyticsOptInPrompt": false,
+      "appVersion": "2.84.0",
+      "language": "fr",
+      "appLanguage": "fr",
+      "region": "FR",
+      "environment": "development",
+      "systemLanguage": "fr",
+      "systemRegion": null,
+      "osType": "Windows_NT",
+      "osVersion": "10.0.22631",
+      "sessionId": "1ff7bda0-76fa-4210-ad51-f9c64ae92bea",
+      "sidebarCollapsed": false,
+      "accountsWithFunds": [],
+      "blockchainsWithNftsOwned": [],
+      "hasGenesisPass": false,
+      "hasInfinityPass": false,
+      "hasSeenMarketWidget": false,
+      "modelIdList": [
+        "nanoSP"
+      ],
+      "modelId": "nanoSP",
+      "deviceVersion": "1.1.0",
+      "deviceLanguage": "english",
+      "appLength": 0,
+      "userId": "de93a3cd-2e92-4f61-8e24-c4b08808a0b7",
+      "braze_external_id": "de93a3cd-2e92-4f61-8e24-c4b08808a0b7"
+    },
+    "level": "info",
+    "message": "△ start() with user id de93a3cd-2e92-4f61-8e24-c4b08808a0b7",
+    "timestamp": "2024-07-24T08:24:22.912Z"
+  },
+  {
+    "type": "action",
+    "level": "debug",
+    "message": "⚛️  FETCH_SETTINGS",
+    "timestamp": "2024-07-24T08:24:22.802Z"
+  },
+  {
+    "type": "logs-separator",
+    "message": "Logs coming from the internal process"
+  },
+  {
+    "type": "internal",
+    "id": "23",
+    "date": "2024-07-24T08:26:39.545Z",
+    "message": "Event disconnect on transport instance. Cleaning cached transport",
+    "context": {
+      "ipcContext": {
+        "jobId": 0,
+        "deviceId": "",
+        "origin": "hw:withDevice"
+      },
+      "descriptor": "",
+      "requestId": "d32db856-c4f8-41b7-b5a0-942480a3a1b7",
+      "function": "transportOpen"
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "22",
+    "date": "2024-07-24T08:26:39.545Z",
+    "message": "Closed HID communication with device. Emitting \"disconnect\" event from static disconnect and clearing singleton instance"
+  },
+  {
+    "type": "hid-verbose",
+    "id": "21",
+    "date": "2024-07-24T08:26:39.545Z",
+    "message": "Disconnecting from HID device",
+    "data": {
+      "hasInstance": true
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "20",
+    "date": "2024-07-24T08:26:39.545Z",
+    "message": "Disconnecting after inactivity, if not prevented",
+    "data": {
+      "hasInstance": true
+    }
+  },
+  {
+    "type": "internal",
+    "id": "19",
+    "date": "2024-07-24T08:26:34.539Z",
+    "message": "Successfully closed transport",
+    "context": {
+      "requestId": "2ee57a79-4075-4265-bda5-c5a2f368d423",
+      "function": "transportClose",
+      "descriptor": ""
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "18",
+    "date": "2024-07-24T08:26:34.539Z",
+    "message": "Closing transport instance by triggering a disconnection after some inactivity",
+    "data": {
+      "hasInstance": true,
+      "disconnectAfterInactivityTimeoutMs": 5000
+    },
+    "context": {
+      "descriptor": "",
+      "hidChannel": 37049,
+      "ipcContext": null
+    }
+  },
+  {
+    "type": "internal",
+    "id": "17",
+    "date": "2024-07-24T08:26:34.539Z",
+    "message": "transport:close message received",
+    "data": {
+      "data": {
+        "descriptor": ""
+      }
+    },
+    "context": {
+      "requestId": "2ee57a79-4075-4265-bda5-c5a2f368d423",
+      "function": "transportClose",
+      "descriptor": ""
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "16",
+    "date": "2024-07-24T08:26:34.537Z",
+    "message": "Finalize, clearing busy guard",
+    "context": {
+      "descriptor": "",
+      "hidChannel": 37049,
+      "ipcContext": {
+        "context": {
+          "jobId": 0,
+          "deviceId": "",
+          "origin": "hw:withDevice"
+        },
+        "requestId": "f9a21212-b2e0-43d9-b28d-7fdd07ed1056"
+      },
+      "function": "exchangeAtomicImpl",
+      "unresponsiveTimeout": 15000
+    }
+  },
+  {
+    "type": "apdu",
+    "id": "15",
+    "date": "2024-07-24T08:26:34.537Z",
+    "message": "<= 0108416c676f72616e6405322e312e3901029000",
+    "data": {
+      "channel": 37049,
+      "packetSize": 64
+    },
+    "context": {
+      "descriptor": "",
+      "hidChannel": 37049,
+      "ipcContext": {
+        "context": {
+          "jobId": 0,
+          "deviceId": "",
+          "origin": "hw:withDevice"
+        },
+        "requestId": "f9a21212-b2e0-43d9-b28d-7fdd07ed1056"
+      },
+      "function": "exchange"
+    }
+  },
+  {
+    "type": "apdu",
+    "id": "14",
+    "date": "2024-07-24T08:26:34.525Z",
+    "message": "=> b001000000",
+    "data": {
+      "channel": 37049,
+      "packetSize": 64
+    },
+    "context": {
+      "descriptor": "",
+      "hidChannel": 37049,
+      "ipcContext": {
+        "context": {
+          "jobId": 0,
+          "deviceId": "",
+          "origin": "hw:withDevice"
+        },
+        "requestId": "f9a21212-b2e0-43d9-b28d-7fdd07ed1056"
+      },
+      "function": "exchange"
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "13",
+    "date": "2024-07-24T08:26:34.525Z",
+    "message": "Exchanging APDU ...",
+    "context": {
+      "descriptor": "",
+      "hidChannel": 37049,
+      "ipcContext": {
+        "context": {
+          "jobId": 0,
+          "deviceId": "",
+          "origin": "hw:withDevice"
+        },
+        "requestId": "f9a21212-b2e0-43d9-b28d-7fdd07ed1056"
+      },
+      "function": "exchange"
+    }
+  },
+  {
+    "type": "internal",
+    "id": "12",
+    "date": "2024-07-24T08:26:34.525Z",
+    "message": "transport:exchange message received",
+    "data": {
+      "data": {
+        "descriptor": "",
+        "apduHex": "b001000000",
+        "context": {
+          "jobId": 0,
+          "deviceId": "",
+          "origin": "hw:withDevice"
+        }
+      }
+    },
+    "context": {
+      "requestId": "f9a21212-b2e0-43d9-b28d-7fdd07ed1056",
+      "function": "transportExchange",
+      "descriptor": ""
+    }
+  },
+  {
+    "type": "hw",
+    "id": "11",
+    "date": "2024-07-24T08:26:34.522Z",
+    "message": "Found a matching Transport: hid",
+    "data": {},
+    "context": {
+      "descriptor": ""
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "10",
+    "date": "2024-07-24T08:26:34.522Z",
+    "message": "Connected to HID device true",
+    "data": {
+      "info": {
+        "manufacturer": "Ledger",
+        "product": "Nano S Plus",
+        "serialNumber": "0001"
+      }
+    },
+    "context": {
+      "descriptor": "",
+      "hidChannel": 37049
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "9",
+    "date": "2024-07-24T08:26:34.514Z",
+    "message": "Found a device, creating HID transport instance ...",
+    "data": {
+      "device": {
+        "vendorId": 11415,
+        "productId": 20501,
+        "path": "\\\\?\\hid#vid_2c97&pid_5015&mi_00#9&dc7f8c7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+        "serialNumber": "0001",
+        "manufacturer": "Ledger",
+        "product": "Nano S Plus",
+        "release": 513,
+        "interface": 0,
+        "usagePage": 65440,
+        "usage": 1
+      }
+    },
+    "context": {
+      "descriptor": ""
+    }
+  },
+  {
+    "type": "hid-verbose",
+    "id": "8",
+    "date": "2024-07-24T08:26:34.513Z",
+    "message": "Devices detected during open: 1",
+    "data": {
+      "devicesDetectedDuringOpen": [
+        {
+          "vendorId": 11415,
+          "productId": 20501,
+          "path": "\\\\?\\hid#vid_2c97&pid_5015&mi_00#9&dc7f8c7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+          "serialNumber": "0001",
+          "manufacturer": "Ledger",
+          "product": "Nano S Plus",
+          "release": 513,
+          "interface": 0,
+          "usagePage": 65440,
+          "usage": 1
+        }
+      ]
+    },
+    "context": {
+      "descriptor": ""
+    }
+  },
+  {
+    "type": "internal",
+    "id": "7",
+    "date": "2024-07-24T08:26:34.503Z",
+    "message": "Open called on registered module",
+    "data": {
+      "transport": "TransportNodeHidSingleton"
+    },
+    "context": {
+      "openContext": {
+        "descriptor": ""
+      }
+    }
+  },
+  {
+    "type": "internal",
+    "id": "6",
+    "date": "2024-07-24T08:26:34.503Z",
+    "message": "Received open transport request",
+    "data": {},
+    "context": {
+      "ipcContext": {
+        "jobId": 0,
+        "deviceId": "",
+        "origin": "hw:withDevice"
+      },
+      "descriptor": "",
+      "requestId": "d32db856-c4f8-41b7-b5a0-942480a3a1b7",
+      "function": "transportOpen"
+    }
+  },
+  {
+    "type": "usb-detection",
+    "id": "5",
+    "date": "2024-07-24T08:26:31.071Z",
+    "message": "add: productId=20501 busNumber=2 deviceAddress=7",
+    "data": {
+      "device": {
+        "busNumber": 2,
+        "deviceAddress": 7,
+        "deviceDescriptor": {
+          "bLength": 18,
+          "bDescriptorType": 1,
+          "bcdUSB": 528,
+          "bDeviceClass": 0,
+          "bDeviceSubClass": 0,
+          "bDeviceProtocol": 0,
+          "bMaxPacketSize0": 64,
+          "idVendor": 11415,
+          "idProduct": 20501,
+          "bcdDevice": 513,
+          "iManufacturer": 1,
+          "iProduct": 2,
+          "iSerialNumber": 3,
+          "bNumConfigurations": 1
+        },
+        "portNumbers": [
+          2,
+          3
+        ]
+      }
+    },
+    "context": {
+      "function": "listenDevices "
+    }
+  },
+  {
+    "type": "usb-detection",
+    "id": "4",
+    "date": "2024-07-24T08:26:30.832Z",
+    "message": "remove: productId=20497 busNumber=2 deviceAddress=7",
+    "data": {
+      "device": {
+        "busNumber": 2,
+        "deviceAddress": 7,
+        "deviceDescriptor": {
+          "bLength": 18,
+          "bDescriptorType": 1,
+          "bcdUSB": 528,
+          "bDeviceClass": 0,
+          "bDeviceSubClass": 0,
+          "bDeviceProtocol": 0,
+          "bMaxPacketSize0": 64,
+          "idVendor": 11415,
+          "idProduct": 20497,
+          "bcdDevice": 513,
+          "iManufacturer": 1,
+          "iProduct": 2,
+          "iSerialNumber": 3,
+          "bNumConfigurations": 1
+        },
+        "portNumbers": [
+          2,
+          3
+        ]
+      }
+    },
+    "context": {
+      "function": "listenDevices "
+    }
+  },
+  {
+    "type": "usb-detection",
+    "id": "3",
+    "date": "2024-07-24T08:26:29.245Z",
+    "message": "add: productId=20497 busNumber=2 deviceAddress=7",
+    "data": {
+      "device": {
+        "busNumber": 2,
+        "deviceAddress": 7,
+        "deviceDescriptor": {
+          "bLength": 18,
+          "bDescriptorType": 1,
+          "bcdUSB": 528,
+          "bDeviceClass": 0,
+          "bDeviceSubClass": 0,
+          "bDeviceProtocol": 0,
+          "bMaxPacketSize0": 64,
+          "idVendor": 11415,
+          "idProduct": 20497,
+          "bcdDevice": 513,
+          "iManufacturer": 1,
+          "iProduct": 2,
+          "iSerialNumber": 3,
+          "bNumConfigurations": 1
+        },
+        "portNumbers": [
+          2,
+          3
+        ]
+      }
+    },
+    "context": {
+      "function": "listenDevices "
+    }
+  },
+  {
+    "type": "internal",
+    "id": "2",
+    "date": "2024-07-24T08:24:35.483Z",
+    "message": "transport:listen message received",
+    "context": {
+      "requestId": "f0f98edc-2d3d-4920-9eac-1f64483e142e"
+    }
+  },
+  {
+    "type": "internal",
+    "id": "1",
+    "date": "2024-07-24T08:24:35.481Z",
+    "message": "Internal process is up!"
+  }
+]

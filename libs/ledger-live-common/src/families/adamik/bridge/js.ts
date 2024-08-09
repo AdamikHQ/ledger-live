@@ -15,6 +15,8 @@ import type { AdamikAccount, Transaction, TransactionStatus } from "../types";
 import { defaultUpdateTransaction } from "@ledgerhq/coin-framework/lib/bridge/jsHelpers";
 import prepareTransaction from "../prepareTransaction";
 import { broadcast } from "../broadcast";
+import { hydrate, preload } from "../preload";
+import { isEqual } from "lodash";
 
 const receive = makeAccountBridgeReceive();
 
@@ -24,16 +26,17 @@ const getPreloadStrategy = _currency => ({
 
 const currencyBridge: CurrencyBridge = {
   getPreloadStrategy,
-  preload: async () => {
-    return Promise.resolve();
-  },
-  hydrate: () => {},
+  preload: preload,
+  hydrate: hydrate,
   scanAccounts,
 };
 
 const accountBridge: AccountBridge<Transaction, AdamikAccount, TransactionStatus> = {
   createTransaction,
-  updateTransaction: defaultUpdateTransaction,
+  updateTransaction: (t, patch) => {
+    const patched = { ...t, ...patch };
+    return isEqual(t, patched) ? t : patched;
+  },
   prepareTransaction,
   estimateMaxSpendable,
   getTransactionStatus,

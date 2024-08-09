@@ -46,6 +46,7 @@ export const signMessage =
     rsv: { r: string; s: string; v: string | number };
     signature: string;
   }> => {
+    console.log("signMessage", messageOpts);
     if (messageOpts.standard === "EIP191") {
       const { r, s, v } = await signerContext(deviceId, signer => {
         return signer.signPersonalMessage(

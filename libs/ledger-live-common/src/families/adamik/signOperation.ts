@@ -42,6 +42,8 @@ export const signOperation: AccountBridge<Transaction, AdamikAccount>["signOpera
             format: "hex",
           });
 
+          console.log(encodedTransaction);
+
           const encoded = encodedTransaction?.transaction.encoded;
 
           console.log({ encoded: JSON.stringify(encoded) });
@@ -50,21 +52,28 @@ export const signOperation: AccountBridge<Transaction, AdamikAccount>["signOpera
             throw new Error("failed to encode transaction");
           }
 
-          o.next({ type: "device-signature-granted" });
-
           const signature = await signer(transport, {
             path: account.freshAddressPath,
             message: encoded,
-            currency: account.currency,
+            account,
+            transaction,
           });
 
-          console.log({ signature: signature.signature.toString("hex") });
+          console.log({
+            signature: Buffer.isBuffer(signature.signature)
+              ? signature.signature.toString("hex")
+              : signature.signature,
+          });
+
+          o.next({ type: "device-signature-granted" });
 
           o.next({
             type: "signed",
             signedOperation: {
               operation: buildOptimisticOperation(account, transaction),
-              signature: signature.signature.toString("hex"),
+              signature: Buffer.isBuffer(signature.signature)
+                ? signature.signature.toString("hex")
+                : signature.signature,
               rawData: { data: JSON.stringify(encodedTransaction) },
             },
           });

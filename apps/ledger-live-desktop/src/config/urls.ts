@@ -198,6 +198,9 @@ export const urls = {
   figment: {
     website: "https://www.figment.io",
   },
+  adamik: {
+    website: "https://adamik.io",
+  },
   solana: {
     staking: "https://support.ledger.com/hc/articles/4731749170461?docs=true",
     recipient_info: "https://support.ledger.com",

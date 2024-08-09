@@ -1,15 +1,19 @@
+import {
+  findTokenByAddressInCurrency,
+  findTokenById,
+  listTokensForCryptoCurrency,
+} from "@ledgerhq/cryptoassets/tokens";
+import { promiseAllBatched } from "@ledgerhq/live-promise";
+import { CryptoCurrency, CryptoCurrencyId, TokenCurrency } from "@ledgerhq/types-cryptoassets";
+import { Account, SyncConfig, TokenAccount } from "@ledgerhq/types-live";
 import BigNumber from "bignumber.js";
 import { emptyHistoryCache, encodeAccountId } from "../../account";
 import { GetAccountShape, makeScanAccounts, makeSync } from "../../bridge/jsHelpers";
 import { getAccount } from "./api/adamik";
-import { AdamikAccount } from "./types";
-import { currencyIdToAdamikIdMapper } from "./helpers";
-import { CryptoCurrency, CryptoCurrencyId, TokenCurrency } from "@ledgerhq/types-cryptoassets";
-import { findTokenById, listTokensForCryptoCurrency } from "@ledgerhq/cryptoassets/tokens";
-import { Account, SyncConfig, TokenAccount } from "@ledgerhq/types-live";
 import { AdamikAccountState } from "./api/adamik.types";
+import { currencyIdToAdamikIdMapper } from "./helpers";
 import { addPrefixToken, extractTokenId } from "./tokens";
-import { promiseAllBatched } from "@ledgerhq/live-promise";
+import { AdamikAccount } from "./types";
 
 async function buildSubAccount({
   parentAccountId,
@@ -76,10 +80,12 @@ const buildSubAccounts = async ({
   }
 
   await promiseAllBatched(3, balances.tokens, async asset => {
-    const token = findTokenById(
+    let token = findTokenById(
       addPrefixToken(asset.token.id, currency.id as CryptoCurrencyId, asset.token.type),
     );
-
+    if (!token) {
+      token = findTokenByAddressInCurrency(asset.token.id, currency.id);
+    }
     if (token && !blacklistedTokenIds.includes(token.id)) {
       const tokenAccount = await buildSubAccount({
         parentAccountId: accountId,
@@ -103,7 +109,8 @@ const buildSubAccounts = async ({
 };
 
 export const getAccountShape: GetAccountShape<AdamikAccount> = async (info, syncConfig) => {
-  const { address, initialAccount, currency, derivationMode } = info;
+  const { address, initialAccount, currency, derivationMode, rest } = info;
+  console.log({ info });
   const accountId = encodeAccountId({
     type: "js",
     version: "2",
@@ -125,7 +132,7 @@ export const getAccountShape: GetAccountShape<AdamikAccount> = async (info, sync
 
   const shape = {
     id: accountId,
-    xpub: address,
+    xpub: rest?.publicKey || address,
     balance: balance,
     spendableBalance,
     operationsCount: operations.length,
