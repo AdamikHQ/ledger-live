@@ -4314,6 +4314,38 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
     ],
     keywords: ["atom", "celestia"],
   },
+  thorchain: {
+    type: "CryptoCurrency",
+    id: "thorchain",
+    coinType: CoinType.RUNE,
+    name: "ThorChain",
+    managerAppName: "Cosmos",
+    ticker: "RUNE",
+    scheme: "cosmos",
+    color: "#16192f",
+    family: "adamik",
+    // FIXME: enable it back when confirmation number is fixed
+    // blockAvgTime: 8,
+    units: [
+      {
+        name: "Rune",
+        code: "RUNE",
+        magnitude: 8,
+      },
+      {
+        name: "microRune",
+        code: "urune",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://www.mintscan.io/celestia/txs/$hash",
+        address: "https://www.mintscan.io/celestia/validators/$address",
+      },
+    ],
+    keywords: ["thorchain", "rune"],
+  },
   // Keep it at the bottom
   // Tickers dup
   binance_beacon_chain: {

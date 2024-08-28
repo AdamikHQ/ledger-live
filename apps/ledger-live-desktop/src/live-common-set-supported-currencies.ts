@@ -95,4 +95,5 @@ setSupportedCurrencies([
   "zksync",
   "zksync_sepolia",
   "celestia",
+  "thorchain",
 ]);

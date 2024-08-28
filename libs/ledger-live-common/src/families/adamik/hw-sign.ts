@@ -28,6 +28,7 @@ const signer = async (
     case "cosmos":
     case "osmo":
     case "celestia":
+    case "thorchain":
       const cosmosSigner = new CosmosApp(transport);
       const cosmosPath = path.split("/").map(p => parseInt(p.replace("'", "")));
       signerResponse = await cosmosSigner.sign(

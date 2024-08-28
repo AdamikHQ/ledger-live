@@ -165,7 +165,8 @@ export type CryptoCurrencyId =
   | "scroll_sepolia"
   | "zksync"
   | "zksync_sepolia"
-  | "celestia";
+  | "celestia"
+  | "thorchain";
 
 export type LedgerExplorerId =
   | "btc"

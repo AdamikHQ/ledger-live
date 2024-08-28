@@ -79,6 +79,7 @@ export enum CoinType {
   RISE = 1120,
   REOSC = 2894,
   RESISTANCE = 356,
+  RUNE = 931,
   SOLANA = 501,
   STAKENET = 384,
   STACKS = 5757,
